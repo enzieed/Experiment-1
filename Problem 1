@@ -1,0 +1,36 @@
+// This program calculates and shows the total ticket sales after each football game
+// Football game ticket sales
+
+#include <iostream>
+#include <conio.h>
+#include <string>
+
+using namespace std;
+
+int main ()
+{
+	int box;
+	int sideline;
+	int premium;
+	int genad;
+	float totalsale;
+
+	cout<<" Ticket             Prices: |" << "Number of Tickets Sold:"<<endl;
+	cout<<" Box:               "<<250<"      |";
+	cin>>box;
+	cout<<" Sideline:          "<<100<<"     |";
+	cin>>sideline;
+	cout<<" Premium:           "<<50<<"      |";
+	cin>>premium;
+	cout<<" General Admission: "<<25<<"      |";
+	cin>>genad;
+	cout<<"                     Sale:"<<endl;
+	cout<<" Box:                "<<box * 250<<endl;
+	cout<<" Sideline:           "<<sideline * 100<<endl;
+	cout<<" Premium:            "<<premium * 50<<endl;
+	cout<<" General Admission   "<<genad * 25 <<endl;
+	cout<<" "<<endl;
+	cout<<" TOTAL SALE:         "<<(box * 250)+(sideline * 100)+(premium * 50)+(genad * 25)<<endl;
+	_getch ();
+	return 0;
+}
